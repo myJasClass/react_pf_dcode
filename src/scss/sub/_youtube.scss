@@ -1,0 +1,29 @@
+.Youtube {
+	article {
+		width: 300px;
+		border: 1px solid #999;
+		padding: 20px;
+		margin: 20px;
+		cursor: pointer;
+
+		img {
+			width: 100%;
+			margin-bottom: 20px;
+		}
+		h2 {
+			font: bold 18px/1.2 'arial';
+			color: #555;
+			margin-bottom: 10px;
+		}
+		p {
+			font: 12px/1.2 'arial';
+			color: #888;
+			margin-bottom: 20px;
+		}
+		span {
+			font: 11px/1 'arial';
+			color: orange;
+			margin-bottom: 20px;
+		}
+	}
+}
