@@ -1,3 +1,4 @@
+import React from 'react';
 import { useState, useEffect, useRef } from 'react';
 import Layout from '../common/Layout';
 function Community() {
@@ -108,6 +109,7 @@ function Community() {
             </div>
             <div className='showBox'>
                 {posts.map((post, idx) => {
+                    let con = post.content.split('\n');
                     return (
                         <article key={idx}>
                             {post.enableUpdate ? (
@@ -131,7 +133,14 @@ function Community() {
                                 // 출력모드
                                 <>
                                     <h2>{post.title}</h2>
-                                    <p>{post.content}</p>
+                                    <p>{con.map((txt, idx) => {
+                                        // 줄바꿈 개행
+                                        return (
+                                            <React.Fragment key={idx}>
+                                                {txt}<br />
+                                            </React.Fragment>
+                                        )
+                                    })}</p>
                                     <div className='btns'>
                                         <button onClick={() => enableUpdate(idx)}>edit</button>
                                         <button onClick={() => deletePost(idx)}>delete</button>

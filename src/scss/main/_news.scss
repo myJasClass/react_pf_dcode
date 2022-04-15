@@ -2,6 +2,9 @@ main {
 	width: 1180px;
 	min-height: 500px;
 	margin: 150px auto;
+
+	//드래그금지
+	-webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none
 }
 
 @media screen and (max-width: $tablet) {
