@@ -7,7 +7,7 @@ import Footer from './components/common/Footer';
 
 //main 컴포넌트
 import Visual from './components/main/Visual';
-import Content from './components/main/Content';
+import News from './components/main/News';
 
 //sub 컴포넌트
 import Youtube from './components/sub/Youtube';
@@ -28,7 +28,7 @@ function App() {
 				<Route exact path='/'>
 					<Header type={'main'} logoSrc={`${path}/img/logo1.png`} />
 					<Visual />
-					<Content />
+					<News />
 				</Route>
 
 				<Route path='/'>
