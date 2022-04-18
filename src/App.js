@@ -16,6 +16,8 @@ import Member from './components/sub/Member';
 import Location from './components/sub/Location';
 import Join from './components/sub/Join';
 import Community from './components/sub/Community';
+import Masonry from './components/sub/Masonry';
+
 
 
 
@@ -38,6 +40,7 @@ function App() {
 
 			<Route path='/youtube' component={Youtube} />
 			<Route path='/gallery' component={Gallery} />
+			<Route path='/masonry' component={Masonry} />
 			<Route path='/member' component={Member} />
 			<Route path='/location' component={Location} />
 			<Route path='/join' component={Join} />
